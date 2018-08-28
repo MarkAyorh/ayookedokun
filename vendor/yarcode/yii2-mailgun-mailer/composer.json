@@ -1,0 +1,48 @@
+{
+  "name": "yarcode/yii2-mailgun-mailer",
+  "description": "Mailgun mailer implementation for Yii2",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "mailer",
+    "mailgun",
+    "email",
+    "mail",
+    "api"
+  ],
+  "homepage": "http://packagist.org/packages/yarcode/yii2-mailgun-mailer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexey Samoylov",
+      "email": "alexey.samoylov@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/yarcode/yii2-mailgun-mailer/issues",
+    "source": "https://github.com/yarcode/yii2-mailgun-mailer"
+  },
+  "require": {
+    "yiisoft/yii2": "~2",
+    "mailgun/mailgun-php": "^2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-win": "vendor\\bin\\phpunit.bat"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "YarCode\\Yii2\\Mailgun\\": "./src"
+    }
+  }
+}
